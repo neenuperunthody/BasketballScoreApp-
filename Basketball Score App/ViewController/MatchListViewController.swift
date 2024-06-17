@@ -9,7 +9,7 @@ import UIKit
 import AlamofireImage
 
 protocol MatchListDelegate: AnyObject {
-    func didReceiveMatchDetails(_ tournamentDetails: Tournaments)
+    func didReceiveMatchDetails()
     func didReceiveError(_ error: Error)
 }
 
@@ -22,7 +22,6 @@ class MatchListViewController: UIViewController {
     
     // MARK: - Variables
     var viewModel = MatchListViewModel()
-    var matchList: Tournaments?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,11 +57,11 @@ class MatchListViewController: UIViewController {
 extension MatchListViewController: UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return matchList?.matchList.count ?? 0
+        return viewModel.matchList?.matchList.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return matchList?.matchList[section].match.count ?? 0
+        return viewModel.matchList?.matchList[section].match.count ?? 0
     }
     
     
@@ -70,7 +69,7 @@ extension MatchListViewController: UITableViewDelegate, UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: Constants.teamDetailsCell, for: indexPath) as! TeamDetailsTableViewCell
         
-        let match = matchList?.matchList[indexPath.section].match[indexPath.row]
+        let match = viewModel.matchList?.matchList[indexPath.section].match[indexPath.row]
         let homeTeamName = match?.details.homeTeamDetail?.name
         let homeTeamLogo = match?.details.homeTeamDetail?.logo
         let homeScore: [Int] = match?.details.matchDetails.homeScores ?? []
@@ -94,7 +93,7 @@ extension MatchListViewController: UITableViewDelegate, UITableViewDataSource {
         let headerCell = tableView.dequeueReusableCell(withIdentifier: Constants.tournamentCell) as! TournamentNameTableViewCell
         view.backgroundColor = UIColor.black
         
-        let tournamentName = matchList?.matchList[section].tournamentName
+        let tournamentName = viewModel.matchList?.matchList[section].tournamentName
         headerCell.setTournamentName(tournamentName ?? "")
         view.addSubview(headerCell)
         return view
@@ -107,7 +106,7 @@ extension MatchListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let storyboard = UIStoryboard(name: Constants.matchDetails, bundle: nil)
         let nextViewController = storyboard.instantiateViewController(withIdentifier: Constants.matchDetailsVC) as! MatchDetailsViewController
-        let matchId = matchList?.matchList[indexPath.section].match[indexPath.row].id
+        let matchId = viewModel.matchList?.matchList[indexPath.section].match[indexPath.row].id
         nextViewController.matchiD = matchId ?? ""
         self.navigationController?.pushViewController(nextViewController, animated: true)
     }
@@ -116,13 +115,12 @@ extension MatchListViewController: UITableViewDelegate, UITableViewDataSource {
 // MARK: - MatchListDelegate Handling
 extension MatchListViewController: MatchListDelegate {
     
-    func didReceiveMatchDetails(_ tournamentDetails: Tournaments) {
+    func didReceiveMatchDetails() {
         ActivityIndicatorManager.shared.hideActivityIndicator()
-        self.matchList = tournamentDetails
         DispatchQueue.main.async {
             self.tableView.reloadData()
             self.updateTableViewHeight()
-            let matchCount = self.matchList?.matchList.count
+            let matchCount = self.viewModel.matchList?.matchList.count
             if matchCount == 0 {
                 self.showAlert(title: "Message", message: Constants.dataError)
             }

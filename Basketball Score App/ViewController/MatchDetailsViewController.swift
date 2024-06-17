@@ -15,7 +15,7 @@ import LZViewPager
 import AlamofireImage
 
 protocol MatchViewModelDelegate: AnyObject {
-    func didReceiveMatchDetails(_ matchDetails: MatchData)
+    func didReceiveMatchDetails()
     func didReceiveError(_ error: Error)
 }
 
@@ -35,7 +35,7 @@ class MatchDetailsViewController: UIViewController {
     private var subControllers:[UIViewController] = []
     var matchiD = ""
     var viewModel = MatchDetailsViewModel()
-    var matchDetails: MatchData?
+    //var matchDetails: MatchData?
     var statsVC = StatsViewController()
     
     override func viewDidLoad() {
@@ -106,7 +106,7 @@ extension MatchDetailsViewController: LZViewPagerDelegate, LZViewPagerDataSource
     
     func didSelectButton(at index: Int) {
         if index == 1 {
-            statsVC.matchDetailsResponse = matchDetails?.matchDetails
+            statsVC.matchDetailsResponse = viewModel.matchDetails?.matchDetails
         }
     }
     
@@ -118,34 +118,34 @@ extension MatchDetailsViewController: LZViewPagerDelegate, LZViewPagerDataSource
 // MARK: - MatchViewModelDelegate
 extension MatchDetailsViewController: MatchViewModelDelegate {
     
-    func didReceiveMatchDetails(_ matchDetails: MatchData) {
+    func didReceiveMatchDetails() {
         ActivityIndicatorManager.shared.hideActivityIndicator()
-        self.matchDetails = matchDetails
-        print(matchDetails)
+        print(viewModel.matchDetails as Any)
         DispatchQueue.main.async { [self] in
-            updateUI(with: matchDetails)
+            guard let data = viewModel.matchDetails else { return }
+            updateUI(with: data)
         }
     }
     
     private func updateUI(with matchDetails: MatchData) {
-        self.title = matchDetails.tournamentDetails.name
-        self.homeTeamName.text = matchDetails.homeTeamDetail?.name
-        let homeLogo = matchDetails.homeTeamDetail?.logo
+        self.title = viewModel.matchDetails?.tournamentDetails.name
+        self.homeTeamName.text = viewModel.matchDetails?.homeTeamDetail?.name
+        let homeLogo = viewModel.matchDetails?.homeTeamDetail?.logo
         if let homeImageUrl = URL(string: homeLogo ?? "") {
             homeTeamImage.af.setImage(withURL: homeImageUrl)
         }
-        let matchTime = matchDetails.matchDetails.matchTime
-        self.dateAndTime.text = viewModel.convertTimestampToReadableDate(TimeInterval(matchTime))
-        let totalHomeScore = matchDetails.matchDetails.homeScores.reduce(0, +)
-        self.homeTeamScore.text = "\(totalHomeScore)"
+        let matchTime = viewModel.matchDetails?.matchDetails.matchTime
+        self.dateAndTime.text = viewModel.convertTimestampToReadableDate(TimeInterval(matchTime ?? 0))
+        let totalHomeScore = viewModel.matchDetails?.matchDetails.homeScores.reduce(0, +)
+        self.homeTeamScore.text = "\(totalHomeScore ?? 0)"
 
-        self.awayTeamName.text = matchDetails.awayTeamDetail?.name
+        self.awayTeamName.text = viewModel.matchDetails?.awayTeamDetail?.name
         let awayLogo = matchDetails.awayTeamDetail?.logo
         if let awayImageUrl = URL(string: awayLogo ?? "") {
             awayTeamImage.af.setImage(withURL: awayImageUrl)
         }
-        let totalAwayScore = matchDetails.matchDetails.awayScores.reduce(0, +)
-        self.awayTeamScore.text = "\(totalAwayScore)"
+        let totalAwayScore = viewModel.matchDetails?.matchDetails.awayScores.reduce(0, +)
+        self.awayTeamScore.text = "\(totalAwayScore ?? 0)"
     }
     
     

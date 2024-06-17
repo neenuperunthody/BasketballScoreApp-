@@ -11,19 +11,20 @@ import Alamofire
 class MatchDetailsViewModel {
     
     weak var delegate: MatchViewModelDelegate?
+    var matchDetails: MatchData?
     
     // MARK: - Fetch API for match details
     func fetchMatchDetails(matchId: String) {
         let url = Constants.constructFullURL(with: matchId)
-        print(url)
         
-        NetworkManager.shared.request(url: url) { (result: Result<MatchData, Error>) in
+        NetworkManager.shared.request(url: url) { [weak self]  (result: Result<MatchData, Error>) in
             switch result {
             case .success(let matchResponse):
-                self.delegate?.didReceiveMatchDetails(matchResponse)
+                self?.matchDetails = matchResponse
+                self?.delegate?.didReceiveMatchDetails()
                 
             case .failure(let error):
-                self.delegate?.didReceiveError(error)
+                self?.delegate?.didReceiveError(error)
             }
         }
     }

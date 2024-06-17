@@ -52,8 +52,4 @@ struct Constants {
     static let oddsVC = "odds_vc"
     static let h2hVC = "h2h_vc"
     static let matchDetailsVC = "matchDetails_vc"
-    
-    
-    
-    
 }

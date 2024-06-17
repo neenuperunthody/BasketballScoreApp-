@@ -11,18 +11,21 @@ import Alamofire
 class MatchListViewModel {
     
     weak var delegate: MatchListDelegate?
+    var matchList: Tournaments?
     
     // MARK: - Fetch API for tournament details
     func fetchMatchListData() {
         let url = Constants.matchListUrl
         
-        NetworkManager.shared.request(url: url) { (result: Result<Tournaments, Error>) in
+        NetworkManager.shared.request(url: url) { [weak self] (result: Result<Tournaments, Error>) in
             switch result {
             case .success(let matchResponse):
-                self.delegate?.didReceiveMatchDetails(matchResponse)
+                self?.matchList = matchResponse
+                print(self?.matchList as Any)
+                self?.delegate?.didReceiveMatchDetails()
                 
             case .failure(let error):
-                self.delegate?.didReceiveError(error)
+                self?.delegate?.didReceiveError(error)
             }
         }
     }
