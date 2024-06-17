@@ -36,7 +36,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DwR-2e-zFN">
                                         <rect key="frame" x="0.0" y="0.0" width="446" height="53.666666666666664"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ball" translatesAutoresizingMaskIntoConstraints="NO" id="x4Z-xs-uaP">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultBall" translatesAutoresizingMaskIntoConstraints="NO" id="x4Z-xs-uaP">
                                                 <rect key="frame" x="0.0" y="1.6666666666666643" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="Pg0-d9-fkF"/>
@@ -219,7 +219,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sWG-pq-zXG">
                                         <rect key="frame" x="0.0" y="73.666666666666671" width="446" height="53.333333333333329"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ball" translatesAutoresizingMaskIntoConstraints="NO" id="LAr-8L-GbO">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultBall" translatesAutoresizingMaskIntoConstraints="NO" id="LAr-8L-GbO">
                                                 <rect key="frame" x="0.0" y="1.6666666666666572" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="91j-yd-A91"/>
@@ -446,7 +446,7 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="ball" width="34" height="34"/>
+        <image name="defaultBall" width="64" height="64"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
