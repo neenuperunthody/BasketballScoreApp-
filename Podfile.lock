@@ -1,0 +1,29 @@
+PODS:
+  - Alamofire (5.9.0)
+  - AlamofireImage (4.3.0):
+    - Alamofire (~> 5.8)
+  - LZViewPager (1.3.1):
+    - SnapKit (~> 5.6.0)
+  - SnapKit (5.6.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - AlamofireImage
+  - LZViewPager
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AlamofireImage
+    - LZViewPager
+    - SnapKit
+
+SPEC CHECKSUMS:
+  Alamofire: 02b772c9910e8eba1a079227c32fbd9e46c90a24
+  AlamofireImage: 843953fa97bee5f561cf05d83abd759e590b068d
+  LZViewPager: ff4dbc601c4591e5a41bf39b0998218679e0673f
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+
+PODFILE CHECKSUM: e403d8a1bdcbf71f956209c5d4f33463f7c4dcac
+
+COCOAPODS: 1.15.2

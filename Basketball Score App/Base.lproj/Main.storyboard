@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kkV-0r-xV9">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Favorite-->
+        <scene sceneID="Ht4-hg-rrI">
+            <objects>
+                <viewController id="sK6-DK-bBF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vkK-k9-Dzz">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="769"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="GZ1-hU-960"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Favorite" image="been-here-marker" id="mz8-ds-Dos">
+                        <inset key="imageInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="5"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ygP-vS-la5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1524" y="483"/>
+        </scene>
+        <!--Match List View Controller-->
+        <scene sceneID="Rqn-it-jV1">
+            <objects>
+                <viewController id="r3W-px-VhS" customClass="MatchListViewController" customModule="Basketball_Score_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HMg-zU-onZ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="769"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VAI-G5-Hxl">
+                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="iYz-XL-LnD">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="666"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="666" id="vEk-uD-8Of"/>
+                                        </constraints>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="iYz-XL-LnD" secondAttribute="trailing" id="9Qj-nV-miW"/>
+                                    <constraint firstItem="iYz-XL-LnD" firstAttribute="top" secondItem="VAI-G5-Hxl" secondAttribute="top" id="Lg7-sm-oq0"/>
+                                    <constraint firstItem="iYz-XL-LnD" firstAttribute="leading" secondItem="VAI-G5-Hxl" secondAttribute="leading" id="ZYn-yQ-qmH"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ayi-Sj-Jvp"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ayi-Sj-Jvp" firstAttribute="bottom" secondItem="VAI-G5-Hxl" secondAttribute="bottom" id="0yO-HB-qs8"/>
+                            <constraint firstItem="ayi-Sj-Jvp" firstAttribute="trailing" secondItem="VAI-G5-Hxl" secondAttribute="trailing" id="OvK-04-JMV"/>
+                            <constraint firstItem="VAI-G5-Hxl" firstAttribute="leading" secondItem="ayi-Sj-Jvp" secondAttribute="leading" id="bZ9-QY-2Ji"/>
+                            <constraint firstItem="VAI-G5-Hxl" firstAttribute="top" secondItem="ayi-Sj-Jvp" secondAttribute="top" id="cfc-4w-eAz"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="87s-ly-fVL">
+                        <barButtonItem key="leftBarButtonItem" image="menu" id="Oab-LS-NdX">
+                            <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="iYz-XL-LnD" id="eNT-5y-zx8"/>
+                        <outlet property="tableViewHeightConstraint" destination="vEk-uD-8Of" id="ImB-AF-X0a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g5S-cE-Son" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="260.30534351145036" y="407.74647887323948"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="4SL-2d-DPB">
+            <objects>
+                <viewController id="825-Og-GWy" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bmb-iD-fpu">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="769"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="9wx-z7-ROd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="atY-Yg-fcv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dNF-Eb-rTh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1961.0687022900763" y="-4.2253521126760569"/>
+        </scene>
+        <!--All Games-->
+        <scene sceneID="LjD-VJ-AXp">
+            <objects>
+                <viewController id="EW1-l6-g86" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nn9-HE-eEp">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="769"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="HMA-cy-2CZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="All Games" image="game" id="cXa-p8-GTu">
+                        <inset key="imageInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="5"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cl1-rZ-nmq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-619" y="-586"/>
+        </scene>
+        <!--Tab Bar View Controller-->
+        <scene sceneID="RjX-m2-IMq">
+            <objects>
+                <tabBarController storyboardIdentifier="tab_bar" id="kkV-0r-xV9" customClass="TabBarViewController" customModule="Basketball_Score_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="jaB-uD-mk5">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.34117650989999998" green="0.46274507050000002" blue="0.2588235438" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="EW1-l6-g86" kind="relationship" relationship="viewControllers" id="gOc-ca-GF1"/>
+                        <segue destination="B2P-kI-rF9" kind="relationship" relationship="viewControllers" id="42E-ly-tOZ"/>
+                        <segue destination="3yA-8v-coO" kind="relationship" relationship="viewControllers" id="acd-kt-0hP"/>
+                        <segue destination="sK6-DK-bBF" kind="relationship" relationship="viewControllers" id="3VV-A4-ukw"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OEs-sw-rB3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1524" y="-282"/>
+        </scene>
+        <!--Live-->
+        <scene sceneID="KKE-lU-j2Z">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="B2P-kI-rF9" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Live" image="live" id="gVI-mu-mH8">
+                        <inset key="imageInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="5"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Lhn-nV-FMw">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="r3W-px-VhS" kind="relationship" relationship="rootViewController" id="TBD-us-16g"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tFr-Yv-fx4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-666.41221374045801" y="407.74647887323948"/>
+        </scene>
+        <!--Update-->
+        <scene sceneID="vqF-KE-12N">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3yA-8v-coO" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Update" image="refresh" id="Rvi-Gk-OYZ">
+                        <inset key="imageInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="5"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="k7n-wa-H6L">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="825-Og-GWy" kind="relationship" relationship="rootViewController" id="eoA-jg-CXk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ptF-FV-VLW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1034.3511450381679" y="-4.2253521126760569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="been-here-marker" width="24" height="24"/>
+        <image name="game" width="24" height="24"/>
+        <image name="live" width="32" height="32"/>
+        <image name="menu" width="24" height="24"/>
+        <image name="refresh" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

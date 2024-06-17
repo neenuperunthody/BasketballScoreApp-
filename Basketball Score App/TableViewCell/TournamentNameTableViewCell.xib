@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TournamentNameTableViewCell" rowHeight="-7" id="KGk-i7-Jjw" customClass="TournamentNameTableViewCell" customModule="Basketball_Score_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="400" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yl3-wQ-ciU">
+                        <rect key="frame" x="8" y="8" width="384" height="34"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="basketball" translatesAutoresizingMaskIntoConstraints="NO" id="FuP-vZ-oX0">
+                                <rect key="frame" x="5" y="-0.33333333333333215" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="3J5-wX-RpY"/>
+                                    <constraint firstAttribute="width" constant="35" id="pCV-sn-c3U"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dql-du-NWF">
+                                <rect key="frame" x="55" y="5" width="329" height="24"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="TournamentNameLabel">
+                                        <attributes>
+                                            <color key="NSColor" red="0.75686274509999996" green="0.78823529410000004" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="16" name="TitilliumWeb-Regular"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FuP-vZ-oX0" firstAttribute="centerY" secondItem="dql-du-NWF" secondAttribute="centerY" id="3iv-kF-ulh"/>
+                            <constraint firstItem="FuP-vZ-oX0" firstAttribute="leading" secondItem="yl3-wQ-ciU" secondAttribute="leading" constant="5" id="DOU-FX-nR5"/>
+                            <constraint firstAttribute="bottom" secondItem="dql-du-NWF" secondAttribute="bottom" constant="5" id="FZJ-J9-Qnn"/>
+                            <constraint firstAttribute="trailing" secondItem="dql-du-NWF" secondAttribute="trailing" id="KsL-JF-n8s"/>
+                            <constraint firstItem="dql-du-NWF" firstAttribute="leading" secondItem="FuP-vZ-oX0" secondAttribute="trailing" constant="15" id="MSc-Am-o6N"/>
+                            <constraint firstItem="dql-du-NWF" firstAttribute="top" secondItem="yl3-wQ-ciU" secondAttribute="top" constant="5" id="drd-jb-tkV"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="yl3-wQ-ciU" secondAttribute="bottom" constant="8" id="6M3-H2-mk9"/>
+                    <constraint firstAttribute="trailing" secondItem="yl3-wQ-ciU" secondAttribute="trailing" constant="8" id="Gum-uU-9py"/>
+                    <constraint firstItem="yl3-wQ-ciU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="WZP-JM-cVO"/>
+                    <constraint firstItem="yl3-wQ-ciU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="xL4-c1-dN4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="tournamentNameLabel" destination="dql-du-NWF" id="Tto-qu-c4B"/>
+            </connections>
+            <point key="canvasLocation" x="42.748091603053432" y="20.774647887323944"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="basketball" width="32" height="32"/>
+    </resources>
+</document>
