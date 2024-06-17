@@ -9,7 +9,7 @@ import UIKit
 
 extension UIView {
 
-    //Mark:- Adding corner radius, borderwidth, shadow in interface
+    // MARK: - Adding corner radius, borderwidth, shadow in interface
     @IBInspectable
     var cornerRadius: CGFloat {
         get {

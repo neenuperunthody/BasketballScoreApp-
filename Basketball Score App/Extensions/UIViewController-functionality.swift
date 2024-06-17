@@ -10,7 +10,7 @@ import UIKit
 
 extension UIViewController {
     
-    //Mark- Adding UIAlert
+    // MARK: - Adding UIAlert
     func showAlert(title: String, message: String, okActionTitle: String = "OK", okActionHandler: ((UIAlertAction) -> Void)? = nil) {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let okAction = UIAlertAction(title: okActionTitle, style: .default, handler: okActionHandler)

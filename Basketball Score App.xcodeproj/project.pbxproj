@@ -21,7 +21,7 @@
 		5A91A92D2C1EDF1B00A7992C /* TitilliumWeb-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5A91A9212C1EDF1B00A7992C /* TitilliumWeb-LightItalic.ttf */; };
 		5A91A92E2C1EDF1B00A7992C /* TitilliumWeb-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5A91A9222C1EDF1B00A7992C /* TitilliumWeb-Italic.ttf */; };
 		5A91A92F2C1EDF1B00A7992C /* TitilliumWeb-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5A91A9232C1EDF1B00A7992C /* TitilliumWeb-Light.ttf */; };
-		5AA173452C1DA36700EFBD2A /* UIView-functionalities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA173442C1DA36700EFBD2A /* UIView-functionalities.swift */; };
+		5AA173452C1DA36700EFBD2A /* UIView-functionality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA173442C1DA36700EFBD2A /* UIView-functionality.swift */; };
 		5AA173472C1DD6DD00EFBD2A /* StatsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA173462C1DD6DD00EFBD2A /* StatsTableViewCell.swift */; };
 		5AA173492C1E053A00EFBD2A /* H2HTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA173482C1E053A00EFBD2A /* H2HTableViewCell.swift */; };
 		5AD21C8B2C200100008AAF88 /* MatchDetailsMockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD21C8A2C200100008AAF88 /* MatchDetailsMockData.swift */; };
@@ -52,7 +52,7 @@
 		5AE9DB752C1D6E8900CDA412 /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE9DB742C1D6E8900CDA412 /* StatsViewController.swift */; };
 		5AE9DB772C1D6EA300CDA412 /* OddsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE9DB762C1D6EA300CDA412 /* OddsViewController.swift */; };
 		5AE9DB792C1D6EC200CDA412 /* H2hViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE9DB782C1D6EC200CDA412 /* H2hViewController.swift */; };
-		5AEC3BF62C204549005E1A97 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEC3BF52C204549005E1A97 /* Network.swift */; };
+		5AEC3BF62C204549005E1A97 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEC3BF52C204549005E1A97 /* NetworkManager.swift */; };
 		B848244F34997EB870AC5F9C /* Pods_Basketball_Score_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2660ACB83C03F98A46D049B4 /* Pods_Basketball_Score_AppTests.framework */; };
 		C3EA7262C128CEBFF73E26EB /* Pods_Basketball_Score_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95549CB5E2C7CC0455B18E4C /* Pods_Basketball_Score_App.framework */; };
 		C593DD89A78F5289387A3D69 /* Pods_Basketball_Score_App_Basketball_Score_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA970B6D8FF219A4596F2F0B /* Pods_Basketball_Score_App_Basketball_Score_AppUITests.framework */; };
@@ -91,7 +91,7 @@
 		5A91A9212C1EDF1B00A7992C /* TitilliumWeb-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-LightItalic.ttf"; sourceTree = "<group>"; };
 		5A91A9222C1EDF1B00A7992C /* TitilliumWeb-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-Italic.ttf"; sourceTree = "<group>"; };
 		5A91A9232C1EDF1B00A7992C /* TitilliumWeb-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-Light.ttf"; sourceTree = "<group>"; };
-		5AA173442C1DA36700EFBD2A /* UIView-functionalities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView-functionalities.swift"; sourceTree = "<group>"; };
+		5AA173442C1DA36700EFBD2A /* UIView-functionality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView-functionality.swift"; sourceTree = "<group>"; };
 		5AA173462C1DD6DD00EFBD2A /* StatsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsTableViewCell.swift; sourceTree = "<group>"; };
 		5AA173482C1E053A00EFBD2A /* H2HTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = H2HTableViewCell.swift; sourceTree = "<group>"; };
 		5AD21C8A2C200100008AAF88 /* MatchDetailsMockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchDetailsMockData.swift; sourceTree = "<group>"; };
@@ -109,8 +109,8 @@
 		5AE9DB342C1D480000CDA412 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5AE9DB372C1D480000CDA412 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5AE9DB392C1D480000CDA412 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5AE9DB422C1D480000CDA412 /* Basketball_Score_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basketball_Score_AppTests.swift; sourceTree = "<group>"; };
 		5AE9DB3E2C1D480000CDA412 /* Basketball Score AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Basketball Score AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AE9DB422C1D480000CDA412 /* Basketball_Score_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basketball_Score_AppTests.swift; sourceTree = "<group>"; };
 		5AE9DB482C1D480000CDA412 /* Basketball Score AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Basketball Score AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AE9DB4C2C1D480000CDA412 /* Basketball_Score_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basketball_Score_AppUITests.swift; sourceTree = "<group>"; };
 		5AE9DB4E2C1D480000CDA412 /* Basketball_Score_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basketball_Score_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -126,7 +126,7 @@
 		5AE9DB742C1D6E8900CDA412 /* StatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
 		5AE9DB762C1D6EA300CDA412 /* OddsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OddsViewController.swift; sourceTree = "<group>"; };
 		5AE9DB782C1D6EC200CDA412 /* H2hViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = H2hViewController.swift; sourceTree = "<group>"; };
-		5AEC3BF52C204549005E1A97 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		5AEC3BF52C204549005E1A97 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		786BDCA9037E1BC87ED61E6F /* Pods-Basketball Score AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Basketball Score AppTests.debug.xcconfig"; path = "Target Support Files/Pods-Basketball Score AppTests/Pods-Basketball Score AppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8B910E3DAE243E3C611D4E66 /* Pods-Basketball Score App-Basketball Score AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Basketball Score App-Basketball Score AppUITests.release.xcconfig"; path = "Target Support Files/Pods-Basketball Score App-Basketball Score AppUITests/Pods-Basketball Score App-Basketball Score AppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		95549CB5E2C7CC0455B18E4C /* Pods_Basketball_Score_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Basketball_Score_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -187,7 +187,7 @@
 		5AA173432C1DA32E00EFBD2A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				5AA173442C1DA36700EFBD2A /* UIView-functionalities.swift */,
+				5AA173442C1DA36700EFBD2A /* UIView-functionality.swift */,
 				5AE774482C1E264300DA0E43 /* UIColor-functionality .swift */,
 				5A08F70E2C1F3C5800BD99EA /* UIViewController-functionality.swift */,
 			);
@@ -222,7 +222,7 @@
 				5AE9DB5E2C1D486600CDA412 /* TableViewCell */,
 				5AE9DB5D2C1D485000CDA412 /* Model */,
 				5AE9DB5C2C1D483600CDA412 /* ViewModel */,
-				5AE9DB5B2C1D482900CDA412 /* VC */,
+				5AE9DB5B2C1D482900CDA412 /* ViewController */,
 				5AE9DB2B2C1D47FD00CDA412 /* AppDelegate.swift */,
 				5AE7744A2C1E29CE00DA0E43 /* Constants.swift */,
 				5AE9DB2D2C1D47FD00CDA412 /* SceneDelegate.swift */,
@@ -236,12 +236,11 @@
 				5AD5571C2C1EF26B00D36421 /* MatchListMockData.swift */,
 				5A08F70C2C1F32D200BD99EA /* ActivityIndicator.swift */,
 				5AD21C8A2C200100008AAF88 /* MatchDetailsMockData.swift */,
-				5AEC3BF52C204549005E1A97 /* Network.swift */,
+				5AEC3BF52C204549005E1A97 /* NetworkManager.swift */,
 			);
 			path = "Basketball Score App";
 			sourceTree = "<group>";
 		};
-
 		5AE9DB412C1D480000CDA412 /* Basketball Score AppTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -259,8 +258,7 @@
 			path = "Basketball Score AppUITests";
 			sourceTree = "<group>";
 		};
-
-		5AE9DB5B2C1D482900CDA412 /* VC */ = {
+		5AE9DB5B2C1D482900CDA412 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
 				5AE9DB5F2C1D48A700CDA412 /* MatchListViewController.swift */,
@@ -271,7 +269,7 @@
 				5AE9DB762C1D6EA300CDA412 /* OddsViewController.swift */,
 				5AE9DB782C1D6EC200CDA412 /* H2hViewController.swift */,
 			);
-			path = VC;
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		5AE9DB5C2C1D483600CDA412 /* ViewModel */ = {
@@ -590,7 +588,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5AEC3BF62C204549005E1A97 /* Network.swift in Sources */,
+				5AEC3BF62C204549005E1A97 /* NetworkManager.swift in Sources */,
 				5AE9DB602C1D48A700CDA412 /* MatchListViewController.swift in Sources */,
 				5AA173472C1DD6DD00EFBD2A /* StatsTableViewCell.swift in Sources */,
 				5AE9DB752C1D6E8900CDA412 /* StatsViewController.swift in Sources */,
@@ -608,7 +606,7 @@
 				5AE9DB772C1D6EA300CDA412 /* OddsViewController.swift in Sources */,
 				5AE9DB732C1D6E6100CDA412 /* OverviewViewController.swift in Sources */,
 				5AE9DB672C1D48F100CDA412 /* MatchDetailsViewModel.swift in Sources */,
-				5AA173452C1DA36700EFBD2A /* UIView-functionalities.swift in Sources */,
+				5AA173452C1DA36700EFBD2A /* UIView-functionality.swift in Sources */,
 				5A08F70D2C1F32D200BD99EA /* ActivityIndicator.swift in Sources */,
 				5AE774492C1E264300DA0E43 /* UIColor-functionality .swift in Sources */,
 				5AE7744E2C1EA02400DA0E43 /* TournamentNameTableViewCell.swift in Sources */,

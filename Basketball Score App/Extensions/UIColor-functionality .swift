@@ -11,7 +11,7 @@ import UIKit
 
 extension UIColor {
     
-    // Extension to convert hex string to UIColor
+    // MARK: - Extension to convert hex string to UIColor
     convenience init(hexString: String) {
         let hex = hexString.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
         var int = UInt64()
