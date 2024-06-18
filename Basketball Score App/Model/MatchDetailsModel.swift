@@ -43,7 +43,7 @@ struct Position: Codable {
 
 // MARK: - TeamDetail
 struct TeamDetail: Codable {
-    let name, shortName: String
+    let name, shortName: String?
     let logo: String
 
     enum CodingKeys: String, CodingKey {
@@ -54,20 +54,20 @@ struct TeamDetail: Codable {
 }
 
 // MARK: - SeasonDetails
-struct SeasonDetails: Codable {
-    let id, competitionID, year: String?
-    let hasPlayerStats, hasTeamStats, isCurrent, updatedAt: Int?
-
-    enum CodingKeys: String, CodingKey {
-        case id
-        case competitionID = "competition_id"
-        case year
-        case hasPlayerStats = "has_player_stats"
-        case hasTeamStats = "has_team_stats"
-        case isCurrent = "is_current"
-        case updatedAt = "updated_at"
-    }
-}
+//struct SeasonDetails: Codable {
+//    let id, competitionID, year: String?
+//    let hasPlayerStats, hasTeamStats, isCurrent, updatedAt: Int?
+//
+//    enum CodingKeys: String, CodingKey {
+//        case id
+//        case competitionID = "competition_id"
+//        case year
+//        case hasPlayerStats = "has_player_stats"
+//        case hasTeamStats = "has_team_stats"
+//        case isCurrent = "is_current"
+//        case updatedAt = "updated_at"
+//    }
+//}
 
 // MARK: - TournamentDetails
 struct TournamentDetails: Codable {

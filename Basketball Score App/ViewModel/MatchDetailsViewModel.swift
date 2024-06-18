@@ -12,6 +12,11 @@ class MatchDetailsViewModel {
     
     weak var delegate: MatchViewModelDelegate?
     var matchDetails: MatchData?
+    private let networkManager: NetworkManagerProtocol
+    
+    init(networkManager: NetworkManagerProtocol = NetworkManager.shared) {
+        self.networkManager = networkManager
+    }
     
     // MARK: - Fetch API for match details
     func fetchMatchDetails(matchId: String) {
@@ -36,12 +41,11 @@ class MatchDetailsViewModel {
         
         let dateFormatter = DateFormatter()
         dateFormatter.locale = Locale(identifier: "en_US_POSIX")
-
+        dateFormatter.timeZone = TimeZone(secondsFromGMT: 0)
         dateFormatter.dateFormat = "h:mm a, EEEE, MMM d, yyyy"
         
         let readableDate = dateFormatter.string(from: date)
         
         return readableDate
     }
-    
 }

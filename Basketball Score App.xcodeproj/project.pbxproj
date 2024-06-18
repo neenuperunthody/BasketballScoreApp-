@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A05788D2C20AB3400211A06 /* MockNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A05788C2C20AB3400211A06 /* MockNetworkManager.swift */; };
+		5A05788F2C20AB6800211A06 /* MatchListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A05788E2C20AB6800211A06 /* MatchListViewModelTests.swift */; };
+		5A0578912C20C2AE00211A06 /* MatchDetailsViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0578902C20C2AE00211A06 /* MatchDetailsViewModelTest.swift */; };
 		5A08F70D2C1F32D200BD99EA /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A08F70C2C1F32D200BD99EA /* ActivityIndicator.swift */; };
 		5A08F70F2C1F3C5800BD99EA /* UIViewController-functionality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A08F70E2C1F3C5800BD99EA /* UIViewController-functionality.swift */; };
 		5A91A9242C1EDF1B00A7992C /* TitilliumWeb-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5A91A9182C1EDF1B00A7992C /* TitilliumWeb-Black.ttf */; };
@@ -77,6 +80,9 @@
 
 /* Begin PBXFileReference section */
 		2660ACB83C03F98A46D049B4 /* Pods_Basketball_Score_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Basketball_Score_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A05788C2C20AB3400211A06 /* MockNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkManager.swift; sourceTree = "<group>"; };
+		5A05788E2C20AB6800211A06 /* MatchListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchListViewModelTests.swift; sourceTree = "<group>"; };
+		5A0578902C20C2AE00211A06 /* MatchDetailsViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchDetailsViewModelTest.swift; sourceTree = "<group>"; };
 		5A08F70C2C1F32D200BD99EA /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		5A08F70E2C1F3C5800BD99EA /* UIViewController-functionality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController-functionality.swift"; sourceTree = "<group>"; };
 		5A91A9182C1EDF1B00A7992C /* TitilliumWeb-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-Black.ttf"; sourceTree = "<group>"; };
@@ -245,6 +251,9 @@
 			isa = PBXGroup;
 			children = (
 				5AE9DB422C1D480000CDA412 /* Basketball_Score_AppTests.swift */,
+				5A05788C2C20AB3400211A06 /* MockNetworkManager.swift */,
+				5A05788E2C20AB6800211A06 /* MatchListViewModelTests.swift */,
+				5A0578902C20C2AE00211A06 /* MatchDetailsViewModelTest.swift */,
 			);
 			path = "Basketball Score AppTests";
 			sourceTree = "<group>";
@@ -620,6 +629,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A05788D2C20AB3400211A06 /* MockNetworkManager.swift in Sources */,
+				5A0578912C20C2AE00211A06 /* MatchDetailsViewModelTest.swift in Sources */,
+				5A05788F2C20AB6800211A06 /* MatchListViewModelTests.swift in Sources */,
 				5AE9DB432C1D480000CDA412 /* Basketball_Score_AppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
