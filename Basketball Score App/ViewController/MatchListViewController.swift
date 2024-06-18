@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import AlamofireImage
 
 protocol MatchListDelegate: AnyObject {
     func didReceiveMatchDetails()

@@ -5,12 +5,8 @@
 //  Created by Neenu on 15/06/24.
 //
 
-import UIKit
-import LZViewPager
-import AlamofireImage
 
 import UIKit
-import Combine
 import LZViewPager
 import AlamofireImage
 
@@ -49,7 +45,6 @@ class MatchDetailsViewController: UIViewController {
     }
     
     // MARK: - LZViewPager Handling
-    
     func SetViewPager() {
         viewPager.delegate = self
         viewPager.dataSource = self
