@@ -599,7 +599,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="1000"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cYU-X0-HVn">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1000"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="600"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3bA-rV-bkg">
                                                 <rect key="frame" x="10" y="15" width="373" height="75"/>
@@ -1661,7 +1661,7 @@
                                         <constraints>
                                             <constraint firstItem="9Yr-lc-Rqc" firstAttribute="top" secondItem="AZE-iO-WWu" secondAttribute="bottom" constant="25" id="0S0-of-lgk"/>
                                             <constraint firstItem="3bA-rV-bkg" firstAttribute="top" secondItem="cYU-X0-HVn" secondAttribute="top" constant="15" id="0cd-QM-EVQ"/>
-                                            <constraint firstAttribute="height" constant="1000" id="CMi-0N-gAJ"/>
+                                            <constraint firstAttribute="height" constant="600" id="CMi-0N-gAJ"/>
                                             <constraint firstItem="AZE-iO-WWu" firstAttribute="leading" secondItem="cYU-X0-HVn" secondAttribute="leading" constant="10" id="Q9F-JH-pjC"/>
                                             <constraint firstAttribute="trailing" secondItem="AZE-iO-WWu" secondAttribute="trailing" constant="10" id="b9n-gg-tej"/>
                                             <constraint firstItem="3bA-rV-bkg" firstAttribute="leading" secondItem="cYU-X0-HVn" secondAttribute="leading" constant="10" id="l12-Xm-5Pa"/>
