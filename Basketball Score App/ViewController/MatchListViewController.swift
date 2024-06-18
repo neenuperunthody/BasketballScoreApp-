@@ -33,8 +33,6 @@ class MatchListViewController: UIViewController {
         ActivityIndicatorManager.shared.showActivityIndicator(on: self.view)
         
         setTableView()
-        
-       
     }
     
     func setTableView() {
@@ -131,5 +129,3 @@ extension MatchListViewController: MatchListDelegate {
         self.showAlert(title: "Message", message: Constants.networkError)
     }
 }
-
-

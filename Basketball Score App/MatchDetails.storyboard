@@ -1786,6 +1786,7 @@
                                                                 <attributes>
                                                                     <color key="NSColor" red="0.75686274509999996" green="0.78823529410000004" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <font key="NSFont" size="13" name="TitilliumWeb-Regular"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                 </attributes>
                                                             </fragment>
                                                         </attributedString>
