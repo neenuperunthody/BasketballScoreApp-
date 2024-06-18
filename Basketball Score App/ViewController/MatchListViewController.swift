@@ -103,6 +103,7 @@ extension MatchListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let storyboard = UIStoryboard(name: Constants.matchDetails, bundle: nil)
         let nextViewController = storyboard.instantiateViewController(withIdentifier: Constants.matchDetailsVC) as! MatchDetailsViewController
+        nextViewController.hidesBottomBarWhenPushed = true
         let matchId = viewModel.matchList?.matchList[indexPath.section].match[indexPath.row].id
         nextViewController.matchiD = matchId ?? ""
         self.navigationController?.pushViewController(nextViewController, animated: true)
