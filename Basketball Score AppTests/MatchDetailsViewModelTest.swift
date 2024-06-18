@@ -36,7 +36,6 @@ class MatchDetailsViewModelTest: XCTestCase {
         // Given
         let data = matchDataMock
         mockNetworkManager.responseData = data.data(using: .utf8)!
-        print("Test: Mock data set")
         
         // When
         viewModel.fetchMatchDetails(matchId: "123")
@@ -54,7 +53,6 @@ class MatchDetailsViewModelTest: XCTestCase {
             // Given
             let mockError = NSError(domain: "", code: 0, userInfo: [NSLocalizedDescriptionKey: "Mock error"])
             mockNetworkManager.responseError = mockError
-            print("Test: Mock error set")
     
             // When
             viewModel.fetchMatchDetails(matchId: "123")

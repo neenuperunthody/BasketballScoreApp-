@@ -36,11 +36,9 @@ class MatchListViewModelTests: XCTestCase {
         let data = mockData
         
         mockNetworkManager.responseData = data.data(using: .utf8)!
-        print("Test: Mock data set")
         
         // When
         viewModel.fetchMatchListData()
-        print("Test: Fetch match list data called")
         
         // Then
         XCTAssertTrue(mockDelegate.didReceiveMatchDetailsCalled, "Delegate didReceiveMatchDetails should be called")
@@ -52,11 +50,9 @@ class MatchListViewModelTests: XCTestCase {
         // Given
         let mockError = NSError(domain: "", code: 0, userInfo: [NSLocalizedDescriptionKey: "Mock error"])
         mockNetworkManager.responseError = mockError
-        print("Test: Mock error set")
         
         // When
         viewModel.fetchMatchListData()
-        print("Test: Fetch match list data called")
         
         // Then
         XCTAssertFalse(mockDelegate.didReceiveMatchDetailsCalled, "Delegate didReceiveMatchDetails should not be called")
