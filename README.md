@@ -1,5 +1,25 @@
 # Basketball Score App
 
+### Screenshots
+
+<div align="center">
+  <a href="https://github.com/neenuperunthody/BasketballScoreApp-/blob/main/Screenshots/liveScreen.png">
+    <img src="https://github.com/neenuperunthody/BasketballScoreApp-/blob/main/Screenshots/liveScreen.png" width="200" height="450" alt="liveScreen.png">
+  </a>
+  <a href="https://github.com/neenuperunthody/BasketballScoreApp-/blob/main/Screenshots/statsScreen.png">
+    <img src="https://github.com/neenuperunthody/BasketballScoreApp-/blob/main/Screenshots/statsScreen.png" width="200" height="450" alt="statsScreen.png" border="0">
+  </a>
+  <a href="https://github.com/neenuperunthody/BasketballScoreApp-/blob/main/Screenshots/overviewScreen.png">
+    <img src="https://github.com/neenuperunthody/BasketballScoreApp-/blob/main/Screenshots/overviewScreen.png" width="200" height="450" alt="overviewScreen.png" border="0">
+  </a>
+  <a href="https://github.com/neenuperunthody/BasketballScoreApp-/blob/main/Screenshots/h2hScreen.png">
+    <img src="https://github.com/neenuperunthody/BasketballScoreApp-/blob/main/Screenshots/h2hScreen.png" width="200" height="450" alt="h2hScreen.png" border="0">
+  </a>
+  <a href="https://github.com/neenuperunthody/BasketballScoreApp-/blob/main/Screenshots/oddsScreen.png">
+    <img src="https://github.com/neenuperunthody/BasketballScoreApp-/blob/main/Screenshots/oddsScreen.png" width="200" height="450" alt="oddsScreen.png" border="0">
+  </a>
+</div>
+
 <div align="center">
   <a alt="Swift logo" href="https://developer.apple.com/swift/" target="_blank" rel="noreferrer">
     <img src="https://developer.apple.com/swift/images/swift-og.png" width="45">
@@ -120,27 +140,6 @@ After running pod install, CocoaPods will create a .xcworkspace file. Open this 
 open Basketball\ Score\ App.xcworkspace
 ```
 
-
-
-### Screenshots
-
-<div align="center">
-  <a href="https://github.com/neenuperunthody/BasketballScoreApp-/blob/main/Screenshots/liveScreen.png">
-    <img src="https://github.com/neenuperunthody/BasketballScoreApp-/blob/main/Screenshots/liveScreen.png" width="200" height="450" alt="liveScreen.png">
-  </a>
-  <a href="https://github.com/neenuperunthody/BasketballScoreApp-/blob/main/Screenshots/statsScreen.png">
-    <img src="https://github.com/neenuperunthody/BasketballScoreApp-/blob/main/Screenshots/statsScreen.png" width="200" height="450" alt="statsScreen.png" border="0">
-  </a>
-  <a href="https://github.com/neenuperunthody/BasketballScoreApp-/blob/main/Screenshots/overviewScreen.png">
-    <img src="https://github.com/neenuperunthody/BasketballScoreApp-/blob/main/Screenshots/overviewScreen.png" width="200" height="450" alt="overviewScreen.png" border="0">
-  </a>
-  <a href="https://github.com/neenuperunthody/BasketballScoreApp-/blob/main/Screenshots/h2hScreen.png">
-    <img src="https://github.com/neenuperunthody/BasketballScoreApp-/blob/main/Screenshots/h2hScreen.png" width="200" height="450" alt="h2hScreen.png" border="0">
-  </a>
-  <a href="https://github.com/neenuperunthody/BasketballScoreApp-/blob/main/Screenshots/oddsScreen.png">
-    <img src="https://github.com/neenuperunthody/BasketballScoreApp-/blob/main/Screenshots/oddsScreen.png" width="200" height="450" alt="oddsScreen.png" border="0">
-  </a>
-</div>
 
 ##Additional Resources
 
